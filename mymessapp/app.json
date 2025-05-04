@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "mymessapp",
+    "slug": "mymessapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./logo.jpg",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyAE0IuzLlt6y53WyBnUzv_giBwYHY8uFdo"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./logo.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAE0IuzLlt6y53WyBnUzv_giBwYHY8uFdo"
+        }
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./logo.jpg"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./logo.jpg",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow MyMessApp to use your location to find nearby messes.",
+          "locationAlwaysPermission": "Allow MyMessApp to use your location to find nearby messes.",
+          "locationWhenInUsePermission": "Allow MyMessApp to use your location to find nearby messes."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
